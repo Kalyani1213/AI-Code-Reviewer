@@ -66,14 +66,13 @@ with st.sidebar:
     st.markdown("#### Smart Python Analysis Tool")
     st.divider()
     st.markdown("""
-    <div style="background-color:#dcfce7; padding:14px; border-radius:14px; border:1px solid #22c55e;">
+    <div style="background-color:rgba(34,197,94,0.15); padding:14px; border-radius:14px; border:1px solid #22c55e;">
         <b>✔ Features</b>
         <ul>
             <li>Syntax Validation</li>
             <li>Error Detection</li>
             <li>PEP8 Formatting</li>
             <li>AI Review + Improvement</li>
-           
         </ul>
     </div>
     """, unsafe_allow_html=True)
@@ -276,3 +275,4 @@ if st.session_state.chat_history:
         st.markdown(f"<div class='code-box'>{ans}</div>", unsafe_allow_html=True)
     else:
         st.markdown(f"<div class='answer-box'>{ans}</div>", unsafe_allow_html=True)
+
